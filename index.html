@@ -7,145 +7,135 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  <style>
-    .body {
-    font-family: Playfair Display, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
-}
+    <style>
+        body {
+            font-family: 'Playfair Display', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            background-color: #f5f5f5; /* Added a light background color */
+        }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    
-}
+        .header {
+            background-color: #E3242B;
+            padding: 20px;
+        }
 
-.header .logo h1 {
-    margin: 0;
-    font-size: 2.5em;
-    background-color: #E3242B;
-    
-}
+        .header .logo h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffffff;
+        }
 
-.nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    background-color: #E3242B;
-}
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #E3242B;
+        }
 
-.nav ul li {
-    margin-left: 20px;
-    
-}
+        .nav ul li {
+            margin-left: 20px;
+        }
 
-.nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1em;
-  
-}
-.bg-dark {
-      background-color: #E3242B !important; /* Red color */
-    }
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    font-family: playfair display,sans-serif;
-    font-style: italic;
-}
+        .nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1em;
+        }
 
-.hero-content {
-    max-width: 50%;
-}
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+        }
 
-.hero-content h2 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
+        .hero-content {
+            max-width: 50%;
+            color: #000000; /* Changed hero text color for better contrast */
+        }
 
-.hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
 
-.latest-work h3 {
-    font-size: 1.5em;
-    margin-bottom: 5px;
-}
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
 
-.latest-work p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
+        .latest-work h1 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
 
-.latest-work a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color:#E3242B;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-}
+        .latest-work p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
 
-.hero-image img {
-    max-width: 100%;
-    height: 10%;
-    border-radius: 100%;
-}
-.social-icons {
-    display: flex;
-    gap: 10px; /* Space between icons */
-}
-.social-icons a {
-    text-decoration: none;
-    color: inherit; /* If using Font Awesome icons */
-}
-.social-icons img {
-    width: 32px; /* Adjust size as needed */
-    height: 32px;
-}
-.social-icons i {
-    font-size: 40px; /* Adjust size as needed */
-}
+        .latest-work a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #E3242B;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
 
-.footer {
-        text-align: center;
-        padding: 20px;
-        background-color: #E3242B;
-    }
-</style>
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%; /* Changed border radius to make it circular */
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center; /* Center align icons */
+            gap: 20px; /* Increased gap between icons */
+            margin-top: 20px; /* Added space above icons */
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #E3242B; /* Changed icon color to match theme */
+            background-color: #ffffff; /* Added background color for icons */
+            padding: 10px; /* Increased padding for better touch interaction */
+            border-radius: 50%; /* Make icons circular */
+            transition: all 0.3s ease; /* Smooth transition */
+        }
+
+        .social-icons a:hover {
+            background-color: #E3242B;
+            color: #ffffff;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #E3242B;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1></h1>
-        </div>
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
-          </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Background</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
+
     <section class="hero">
         <div class="hero-content">
             <h1><strong>Hello!</strong></h1>
-            <p>I'm <strong>Ritah Akullo</strong>
-              Welcome to my portfolio website! As a passionate and dedicated software engineer, I specialize in creating robust, efficient, and innovative software solutions. With a strong foundation in computer science and a keen eye for detail, I thrive in dynamic environments where problem-solving and creativity are paramount.</p>
+            <p>I'm <strong>Ritah Akullo</strong>. Welcome to my portfolio website! As a passionate and dedicated software engineer, I specialize in creating robust, efficient, and innovative software solutions. With a strong foundation in computer science and a keen eye for detail, I thrive in dynamic environments where problem-solving and creativity are paramount.</p>
             <div class="latest-work">
                 <h1><strong>My Other Work</strong></h1>
                 <p>Pageant Model | Fashion Model | Photo Model</p>
@@ -153,34 +143,34 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="Images/best.jpg" alt="Image/ e.jpg">
+            <img src="Images/best.jpg" alt="Image">
         </div>
     </section>
+
     <div class="social-icons">
-        <a href= "https://www.instagram.com/akullo_bby_model?igsh=MWVzdzVsMW1pMmg4eA==" target="https://www.instagram.com/akullo_bby_model?igsh=MWVzdzVsMW1pMmg4eA==">
+        <a href="https://www.instagram.com/akullo_bby_model?igsh=MWVzdzVsMW1pMmg4eA==" target="_blank">
             <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.facebook.com/ritahrwizi.kazeh" target="https://www.facebook.com/ritahrwizi.kazeh">
+        <a href="https://www.facebook.com/ritahrwizi.kazeh" target="_blank">
             <i class="fab fa-facebook"></i>
         </a>
-        <a href="https://x.com/ritah_akullo?t=shrBhEvlpiLU1odEqXxySA&s=09" target="https://x.com/ritah_akullo?t=shrBhEvlpiLU1odEqXxySA&s=09">
+        <a href="https://x.com/ritah_akullo?t=shrBhEvlpiLU1odEqXxySA&s=09" target="_blank">
             <i class="fab fa-twitter"></i>
         </a>
         <a href="https://wa.me/yourwhatsappphonenumber" target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
         <a href="" target="_blank">
-        <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope"></i>
         </a>
     </div>
-    
-    <footer style="background-color: #E3242B;height: 50px;text-align: center;">
+
+    <footer class="footer">
         <p>&copy; 2024 Akullo Ritah. All rights reserved.</p>
     </footer>
 
-    
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

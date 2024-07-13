@@ -3,129 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kim Tate - Game Designer Portfolio</title>
+    <title>LandingPage</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <style>
-    .body {
-        font-family: Arial, sans-serif;
+    
+<style>
+    body {
+        font-family: 'Playfair Display', sans-serif;
         margin: 0;
         padding: 0;
-        
         color: black;
+        background-color: #f5f5f5; /* Added a light background color */
     }
-    
+
     .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        background-color: #E3242B;
         padding: 20px;
-        background-color:transparent !important;
     }
-.bg-dark {
-      background-color: #E3242B !important; /* Red color */
-    }
+
     .header .logo h1 {
         margin: 0;
-        font-size: 1.5em;
+        font-size: 2.5em;
+        color: #ffffff;
     }
-    
+
     .nav ul {
         list-style: none;
         margin: 0;
         padding: 0;
         display: flex;
+        background-color: #E3242B;
     }
-    
+
     .nav ul li {
         margin-left: 20px;
     }
-    
+
     .nav ul li a {
-        color:black;
+        color: #ffffff;
         text-decoration: none;
         font-size: 1em;
     }
-    
-    .hero-content {
-        position: relative;
-        text-align: center;
-        margin-left: 0%;
-        font-style: italic;
-    }
-    
-    .hero-content h1 {
-        font-size: 3em;
-        margin-bottom: 20px;
-    }
-    
-    .hero-content p {
-        font-size: 1.2em;
-        margin-bottom: 5px;
-        
-    }
-    
-    .bby{
-        font-size: 1.2em;
-        margin-bottom: 10px;
-        margin-left: 30px;
-        font-style: italic;
-    }
-    .quote {font-style: italic;
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    .footer {
-        text-align: center;
-        padding: 20px;
-        background-color:  #E3242B;
-    }
-</style>    
+
+        .hero-content {
+            text-align: center;
+            padding: 50px;
+            font-style: italic;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .bby {
+            padding: 50px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .bby h1 {
+            margin-bottom: 10px;
+        }
+
+        .bby p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .bby img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .quote {
+            font-style: italic;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 20px;
+            color: black;
+            margin-bottom: 20px 0;
+            border-radius: 10px; /* Rounded corners */
+        }
+        .quote i {
+            font-size: 36px; /* Icon size */
+            margin-right: 10px; /* Space to the right of the icon */
+            color: #E3242B; /* Icon color */
+            transition: all 0.3s ease;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #E3242B;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                  <h5 class="text-white h4">Collapsed content</h5>
-                  <span class="text-muted">Toggleable via the navbar brand.</span>
-                </div>
-              </div>
-              <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-              </nav>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Background</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-        <div class="hero-content">
-            <h1>Biography</h1>
-            <p><strong>Date Of Birth: </strong>24thMay,2005</p>
-            <p><strong>Email: </strong>ritah.area@gamil.com</p>
-            <p><strong>Location: </strong>Lira,Kampala-Uganda</p>
-            <p><strong>Nationality: </strong> Ugandan</p>
-            <p><strong>Religion: </strong>Christian</p>
-        </div>
+
+    <div class="hero-content">
+        <h1>Biography</h1>
+        <p><strong>Date Of Birth:</strong> 24th May, 2005</p>
+        <p><strong>Email:</strong> ritah.area@gamil.com</p>
+        <p><strong>Location:</strong> Lira, Kampala-Uganda</p>
+        <p><strong>Nationality:</strong> Ugandan</p>
+        <p><strong>Religion:</strong> Christian</p>
+    </div>
+
     <div class="bby">
-        <H1><italic>Educational Background</italic><i class="fas fa-school"></i>
-        </H1>
+        <h1><em>Educational Background</em> <i class="fas fa-school"></i></h1>
         <p>I sat for Primary Leaving Examinations from Ebenezer Nursery And Primary School in 2018.<br>
         Later joined Halcyon High School for Ordinary Level.<br>
         Sat for Uganda Certificate of Education from Lira Town college in 2023.<br>
-        Joined Groundbreaker talents in 2024.</p><br>
-        <img src="Images/IMG-20240629-WA0114.jpg" alt="IMG-20240629.jpg" style="height: 300px; width: 500px;"> 
-        <p>Graduated from Refactory Academy as a software Engineer in 2024.<i class="fas fa-graduation-cap"></i>
-        </p>
+        Joined Groundbreaker talents in 2024.</p>
+        <img src="Images/IMG-20240629-WA0114.jpg" alt="IMG-20240629.jpg">
+        <p>Graduated from Refactory Academy as a software Engineer in 2024. <i class="fas fa-graduation-cap"></i></p>
     </div>
     <div class="quote">
-        <i class="fas fa-quote-left"></i>Empowering girls into TECH is not just about coding but it's about unlocking the world of opportunity and creativity.<i class="fas fa-quote-right"></i>
+        <i class="fas fa-quote-left"></i>
+        Empowering girls into TECH is not just about coding but it's about unlocking the world of opportunity and creativity.
+        <i class="fas fa-quote-right"></i>
     </div>
-    <footer style="background-color: #E3242B;height: 50px;text-align: center;padding-top: 20px;">
-            <p>&copy; 2024 Akullo Ritah. All rights reserved.</p>
+   
+
+    <footer class="footer">
+        <p>&copy; 2024 Akullo Ritah. All rights reserved.</p>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script> 
