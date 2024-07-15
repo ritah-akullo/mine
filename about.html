@@ -3,54 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LandingPage</title>
+    <title>Landing Page</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Playfair Display', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+            background-color: #f5f5f5;
+            font-style: italic;
+        }
 
-    
-<style>
-    body {
-        font-family: 'Playfair Display', sans-serif;
-        margin: 0;
-        padding: 0;
-        color: black;
-        background-color: #f5f5f5; 
-        font-style: italic;
-    }
+        .header {
+            background-color: #E3242B;
+            padding: 20px;
+        }
 
-    .header {
-        background-color: #E3242B;
-        padding: 20px;
-    }
+        .header .logo h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffffff;
+        }
 
-    .header .logo h1 {
-        margin: 0;
-        font-size: 2.5em;
-        color: #ffffff;
-    }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #E3242B;
+            justify-content: center;
+        }
 
-    .nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        background-color: #E3242B;
-    }
+        .nav ul li {
+            margin-left: 20px;
+        }
 
-    .nav ul li {
-        margin-left: 20px;
-    }
-
-    .nav ul li a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 1em;
-    }
+        .nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1em;
+        }
 
         .hero-content {
             text-align: center;
             padding: 50px;
-            font-style: italic;
         }
 
         .hero-content h1 {
@@ -66,32 +64,23 @@
 
         .bby {
             padding: 50px;
-            font-style: italic;
-    
         }
 
         .bby h1 {
             margin-bottom: 10px;
             font-family: 'Playfair Display', serif;
             text-align: center;
-
         }
-         .bby h5 {
+
+        .bby h5 {
             font-size: 1.5em;
             margin-bottom: 5px;
             font-family: 'Playfair Display', serif;
-            
-         }
+        }
+
         .bby p {
             font-size: 1.2em;
             margin-bottom: 10px;
-        }
-
-        .bby img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-            
         }
 
         .quote {
@@ -100,15 +89,17 @@
             font-family: 'Times New Roman', Times, serif;
             padding: 20px;
             color: black;
-            margin-bottom: 20px 0;
+            margin-bottom: 20px;
             border-radius: 10px; /* Rounded corners */
         }
+
         .quote i {
             font-size: 36px; /* Icon size */
             margin-right: 10px; /* Space to the right of the icon */
             color: #E3242B; /* Icon color */
             transition: all 0.3s ease;
         }
+
         .footer {
             text-align: center;
             padding: 20px;
@@ -136,88 +127,78 @@
         <p><strong>Nationality:</strong> Ugandan</p>
         <p><strong>Religion:</strong> Christian</p>
     </div>
-    <div class="container">
+    <div class="container bby">
         <div class="row">
-            
-            <div class="col-md-4">
-                <div class="col">
-                    <h5 style="font-family: 'Playfair Display', serif;"><strong>Institution</strong></h5>
-                    <ul>
-                        <li><p>Refactory Academy - Kampala:</p></li>
-                        <li><p>Certificate: Software Engineering</p></li>
-                        <li><p>Dates: January 2024 - May 2024</p></li>
-                        <li><p>Certificate: Apprenticeship</p></li>
-                        <li><p>Dates: June 2024 - December 2024</p></li>
-                    </ul>
-                </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h5><strong>Institution</strong></h5>
+                <ul>
+                    <li><p>Refactory Academy - Kampala:</p></li>
+                    <li><p>Certificate: Software Engineering</p></li>
+                    <li><p>Dates: January 2024 - May 2024</p></li>
+                    <li><p>Certificate: Apprenticeship</p></li>
+                    <li><p>Dates: June 2024 - December 2024</p></li>
+                </ul>
             </div>
-            
-            <div class="col-md-4">
-                <div class="col">
-                    <h5 style="font-family: 'Playfair Display', serif;"><strong>Secondary Level</strong></h5>
-                    <ul>
-                        <li><p>Lira Town College - Lira:</p></li>
-                        <li><p>Dates: 2022 - 2023</p></li>
-                        <li><p>Certificate: Uganda Certificate Of Education (UCE)</p></li>
-                        <li><p>Halcyon High School - Soroti:</p></li>
-                        <li><p>Dates: 2019 - 2021</p></li>
-                    </ul>
-                </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h5><strong>Secondary Level</strong></h5>
+                <ul>
+                    <li><p>Lira Town College - Lira:</p></li>
+                    <li><p>Dates: 2022 - 2023</p></li>
+                    <li><p>Certificate: Uganda Certificate Of Education (UCE)</p></li>
+                    <li><p>Halcyon High School - Soroti:</p></li>
+                    <li><p>Dates: 2019 - 2021</p></li>
+                </ul>
             </div>
-                <div class="col-md-4">
-                <div class="col">
-                    <h5 style="font-family: 'Playfair Display', serif;"><strong>Primary Level</strong></h5>
-                    <ul>
-                        <li><p>Ebenezer Nursery And Primary School - Amolatar</p></li>
-                        <li><p>Dates: 2018</p></li>
-                        <li><p>Certificate: Primary Leaving Examinations(PLE)</p></li>
-                        <li><p>Northroad Primary School - Mbale</p></li>
-                        <li><p>Dates: 2012 - 2018</p></li>
-                    </ul>
-                </div>
-                </div>
-                <div class="col">
-                    <h5 style="font-family: 'Playfair Display', serif;"><strong>Nursery Level</strong></h5>
-                    <ul>
-                        <li><p>Green Valley Nursery And Primary School - Amolatar</p></li>
-                        <li><p>Dates: 2009 - 2011</p></li>
-                    </ul>
-                </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h5><strong>Primary Level</strong></h5>
+                <ul>
+                    <li><p>Ebenezer Nursery And Primary School - Amolatar</p></li>
+                    <li><p>Dates: 2018</p></li>
+                    <li><p>Certificate: Primary Leaving Examinations(PLE)</p></li>
+                    <li><p>Northroad Primary School - Mbale</p></li>
+                    <li><p>Dates: 2012 - 2018</p></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h5><strong>Nursery Level</strong></h5>
+                <ul>
+                    <li><p>Green Valley Nursery And Primary School - Amolatar</p></li>
+                    <li><p>Dates: 2009 - 2011</p></li>
+                </ul>
             </div>
         </div>
-    </div>   
-      
-        <img src="Images/IMG-20240629-WA0114.jpg" alt="IMG-20240629.jpg" style="margin-left: 100px ;max-width: 100%; height: auto; margin-bottom: 20px;">
-        <p style="margin-left: 100px;font-family: 'Playfair Display', serif;;">Graduated from Refactory Academy as a software Engineer in 2024. <i class="fas fa-graduation-cap"></i></p>
-     </div>
     </div>
-    <div class="skills" style="font-style: italic;">
-        <h1 style="text-align: center; font-family: 'Playfair Display', serif;"><strong>Skills<i class="fas fa-star"></i></strong></h1>
-        <div class="container">
-            <div class="row">
-              <div class="col order-last">
-              <h2 style="font-family: 'Playfair Display', serif;"><em>Programming Languages</em></h2>
-              <ul>
-                <li>Python</li>
-            </ul>
-              </div>
-              <div class="col">
-                <h2 style="font-family: 'Playfair Display', serif;">Technologies</h2>
+
+    <div class="container text-center">
+        <img src="Images/IMG-20240629-WA0114.jpg" alt="Graduation Image" class="img-fluid" style="max-height: 300px;">
+        <p>Graduated from Refactory Academy as a Software Engineer in 2024. <i class="fas fa-graduation-cap"></i></p>
+    </div>
+
+    <div class="skills container">
+        <h1 class="text-center"><strong>Skills <i class="fas fa-star"></i></strong></h1>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h2><em>Programming Languages</em></h2>
+                <ul>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h2>Technologies</h2>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Bootstrap</li>
                 </ul>
-              </div>
             </div>
         </div>
     </div>
+
     <div class="quote">
         <i class="fas fa-quote-left"></i>
         Empowering girls into TECH is not just about coding but it's about unlocking the world of opportunity and creativity.
         <i class="fas fa-quote-right"></i>
     </div>
-   
 
     <footer class="footer">
         <p>&copy; 2024 Akullo Ritah. All rights reserved.</p>
