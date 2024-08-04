@@ -17,7 +17,7 @@
         }
 
         .header {
-            background-color: #E3242B;
+            background-color: #FF007F;
             padding: 20px;
         }
 
@@ -32,7 +32,7 @@
             margin: 0;
             padding: 0;
             display: flex;
-            background-color: #E3242B;
+            background-color:#FF007F;
             justify-content: center;
         }
 
@@ -50,7 +50,10 @@
             text-align: center;
             padding: 50px;
         }
-
+        .h5 {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
         .hero-content h1 {
             font-size: 3em;
             margin-bottom: 20px;
@@ -96,14 +99,21 @@
         .quote i {
             font-size: 36px; /* Icon size */
             margin-right: 10px; /* Space to the right of the icon */
-            color: #E3242B; /* Icon color */
+            color: #FF007F; /* Icon color */
             transition: all 0.3s ease;
         }
-
+        .card {
+            max-width: 500px; /* Adjust the width as needed */
+            margin: 0 auto;   /* Center the card */
+            
+        }
+        .card-body {
+            padding: 1rem; /* Adjust the padding as needed */
+        }
         .footer {
             text-align: center;
             padding: 20px;
-            background-color: #E3242B;
+            background-color: #FF007F;
             color: white;
         }
     </style>
@@ -127,66 +137,133 @@
         <p><strong>Nationality:</strong> Ugandan</p>
         <p><strong>Religion:</strong> Christian</p>
     </div>
-    <h1 style="font-family: 'Playfair Display', serif;text-align: center;"><strong>Educational Background</strong></h1>
-    <div class="container bby">
-        <div class="row">
-            <div class="col-md-6 col-lg-3 mb-4">
-                <h5><strong>Institution</strong></h5>
-                <ul>
-                    <li><p>Refactory Academy - Kampala:</p></li>
-                    <li><p>Certificate: Software Engineering</p></li>
-                    <li><p>Certificate: Apprenticeship</p></li>
-                   
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-                <h5><strong>Secondary Level</strong></h5>
-                <ul>
-                    <li><p>Lira Town College - Lira:</p></li>
-                    <li><p>Certificate: Uganda Certificate Of Education (UCE)</p></li>
-                    <li><p>Halcyon High School - Soroti:</p></li>
-                    
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-                <h5><strong>Primary Level</strong></h5>
-                <ul>
-                    <li><p>Ebenezer Nursery And Primary School</p></li>
-                    <li><p>Northroad Primary School - Mbale</p></li>
-                    <li><p>Certificate: Primary Leaving Examinations(PLE)</p></li>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-                <h5><strong>Nursery Level</strong></h5>
-                <ul>
-                    <li><p>Green Valley Nursery And Primary School - Amolatar</p></li>
-                   
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="container text-center">
-        <img src="Images/IMG-20240629-WA0114.jpg" alt="Graduation Image" class="img-fluid" style="max-height: 300px;">
-        <p>Graduated from Refactory Academy as a Software Engineer in 2024. <i class="fas fa-graduation-cap"></i></p>
-    </div>
-
-    <div class="skills container">
-        <h1 class="text-center" style="font-family:'Playfair Display', serif;font-size: 1.5em;"><strong>Skills <i class="fas fa-star"></i></strong></h1>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <h5 style="font-family: 'Playfair Display', serif;font-style: italic;"><strong>Programming Languages</strong></h5>
-                <ul>
-                    <li>Python <i class="fab fa-python python-icon"></i></li>
-                    <li>Django</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Bootstrap</li>
-                </ul>
+    <div class="skil">
+        <h1 style="font-family: 'Playfair Display', serif;text-align: center;"><strong>Technical Skills</strong></h1>
+        <h5 style="font-family: 'Playfair Display', serif;font-style: italic;margin-left: 40px;"><strong>Programming Languages</strong></h5>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Python<img src="images/python.svg" alt="Bootstrap Logo" class="logo" style="max-width: 70px;height: auto;"></h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Html<img src="images/html.png" alt="Bootstrap Logo" class="logo" style="max-width: 50px;height: auto;"></h5>
+                
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">CSS 
+                                <img src="images/CSS-Logo.png" alt="CSS Logo" style="max-width: 100px; height: auto;">
+                            </h5>
+                            
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap 
+                                <img src="images/boot.webp" alt="Bootstrap Logo" style="max-width: 80px; height: auto;">
+                            </h5>
+                            
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
+    <div id="skillsCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="text-center"style="font-family:'Playfair Display', serif;"><strong>Soft Skills</strong></h1>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul>
+                                    <li>Personal Development</li>
+                                    <li>Leadership</li>
+                                    <li>Critical thinking and debugging</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="text-center"style="font-family:'Playfair Display', serif;"><strong>Frameworks and Tools</strong></h5>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul>
+                                    <li>Django</li>
+                                </ul>
+                                <h5 class="text-center"style="font-family:'Playfair Display', serif;"><strong>Database Management</strong></h5>
+                                    <ul>
+                                        <li>SQL</li>
+                                    </ul>
+                                    <h5 class="text-center"style="font-family:'Playfair Display', serif;"><strong>Version Control</strong></h5>
+                                        <ul>
+                                            <li><a href="https://github.com/ritah-akullo" target="_blank">Github</a></li>
+                        </ul>
+                                        </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="text-center"style="font-family:'Playfair Display', serif;"><strong>Area Of Interest</strong></h1>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul>
+                                    <li>Product Management</li>
+                                    <li>Backend Development</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <img src="Images/IMG-20240629-WA0114.jpg" alt="Graduation Image" class="img-fluid" style="max-height: 300px;">
+            <p>Graduated from Refactory Academy as a Software Engineer in 2024. <i class="fas fa-graduation-cap"></i></p>
+        </div>
+        <a class="carousel-control-prev" href="#skillsCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#skillsCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    
     <div class="quote">
         <i class="fas fa-quote-left"></i>
         Empowering girls into TECH is not just about coding but it's about unlocking the world of opportunity and creativity.
